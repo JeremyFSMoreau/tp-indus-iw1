@@ -21,7 +21,7 @@ notifications:
     recipients:
       - "jeremyfs.moreau@gmail.com"
     on_success: never
-    on_failure: always
+    on_failure: alwaysl
 
 deploy:
   provider: heroku
