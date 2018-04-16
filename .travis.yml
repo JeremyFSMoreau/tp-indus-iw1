@@ -1,0 +1,19 @@
+# see http://about.travis-ci.org/docs/user/languages/php/ for more hints
+language: php
+
+# list any PHP version you want to test against
+php:
+  - 7.0
+  - 7.1
+
+install:
+# Install PHPCS
+  - pear install PHP_CodeSniffer
+
+script:
+  - phpenv rehash
+  - phpcs .
+
+# configure notifications (email, IRC, campfire etc)
+notifications:
+  email: "jeremyfs.moreau@gmail.com"
