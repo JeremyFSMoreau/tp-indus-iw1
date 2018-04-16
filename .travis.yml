@@ -11,6 +11,7 @@ install:
   - pear install PHP_CodeSniffer
 
 script:
+  - phpenv rehash
   - phpcs .
 
 # configure notifications (email, IRC, campfire etc)
