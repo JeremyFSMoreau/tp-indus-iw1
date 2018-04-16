@@ -13,7 +13,20 @@ install:
 script:
   - phpenv rehash
   - phpcs .
+  - docker run --rm -v $PWD:/app phpqa/security-checker security:check
 
 # configure notifications (email, IRC, campfire etc)
 notifications:
-  email: "jeremyfs.moreau@gmail.com"
+  email: 
+    recipients:
+      - "jeremyfs.moreau@gmail.com"
+    on_success: never
+    on_failure: alwaysl
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: 64c23463-57bf-44a2-b6ca-95015bdb5689
+  app: indusiw1-jeremymoreau
+  on: 
+    repo: JeremyFSMoreau/tp-indus-iw1
