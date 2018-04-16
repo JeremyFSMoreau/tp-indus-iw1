@@ -11,7 +11,7 @@ install:
   - pear install PHP_CodeSniffer
 
 script:
-  - phpcs --standard=ruleset.xml --extensions=php -n -s .
+  - phpcs .
 
 # configure notifications (email, IRC, campfire etc)
 notifications:
