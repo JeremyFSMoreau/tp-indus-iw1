@@ -1,13 +1,13 @@
 language: php
 php:
-- 7.0
-- 7.1
+  - 7.0
+  - 7.1
 install:
-- pear install PHP_CodeSniffer
+  - pear install PHP_CodeSniffer
 script:
-- phpenv rehash
-- phpcs .
-- docker run --rm -v $PWD:/app phpqa/security-checker security:check
+  - phpenv rehash
+  - phpcs .
+  - docker run --rm -v $PWD:/app phpqa/security-checker security:check
 notifications:
   email:
     recipients:
