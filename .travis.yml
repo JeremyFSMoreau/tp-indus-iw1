@@ -17,7 +17,7 @@ notifications:
 deploy:
   provider: heroku
   api_key:
-    secure: sTATswyMWUW4/bwRF20Ok9QHBp2XeyP/XVEjp2ICC/7AbK04peL7Jhue9a53RX0rlI0W4k19TCzXm1RVmtfDLxs/Sk7RC4AT+CIAsnpuViIhAZ1e6NPBHaruUk2ZqfdpSSbyJqFG5C+mnRmrcGM3Jd/kJX2hhuLsEBZucPIns9ckTYdpwmLB6s23nsr+nCadhaHeonjvcOxgmWh1ASCnCvwe5xxoAn67l8iN+FE8YER3nwb9UbAfY97TACiDPjsiR4whdhYpOp5hTuxte/Ol9vhITEXzMoVXeyHs2GQYJnFDXr72mxymPHk0xF8VOsbGtOL4evbOOPITKZehBKzs/iD+IclF3JWHoV9C2ADdCI0y7T53Nau3uvXt+tW7PPUypMl3TGHH9QgCyR3DGPtoAywmyiuROamzMdOaRCYWpdTl4dn1m34FSBpZz1FIpaCGjOJnYV9F+dU8dvrGuBwstB8WxzdQWRm6PrBLtCifqnrMAGzAClJAx6b8TElkDWtizt8i40EE+uirp7EOGx0R5B1kBOhmrIhcwu87uSeZeuK7A5bcOmiL6wE2nXM8NquJ7h+G28Jq+6PI2f/A/cosJBLFcXY9gorLET7rQDBbpxI7A04K25k/wTnRQd85Hpyo2mU43g4dmI5wKU+JngBqi5lVzMoyGUqYyoLHmAvvhwM=
+    secure: $HEROKU_AUTH
   app: indusiw1-jeremymoreau
   on:
     repo: JeremyFSMoreau/tp-indus-iw1
