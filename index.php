@@ -11,5 +11,5 @@
  * @link     https://github.com/JeremyFSMoreau/tp-indus-iw1/ * 
  */
 
-phpinfo();
+echo "Hello world !";
 ?>
