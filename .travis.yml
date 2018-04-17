@@ -1,19 +1,28 @@
+#Language and versions to try
 language: php
 php:
   - 7.0
   - 7.1
+
+# Codesniffer to be sure that the coding is right
 install:
   - pear install PHP_CodeSniffer
+
+# Launch phpcs and security-checker to be sure there is no problem
 script:
   - phpenv rehash
   - phpcs .
   - docker run --rm -v $PWD:/app phpqa/security-checker security:check
+
+# Always send mail if there is a problem, never if it is sucessful
 notifications:
   email:
     recipients:
     - jeremyfs.moreau@gmail.com
     on_success: never
     on_failure: always
+
+# Deploy en heroku
 deploy:
   provider: heroku
   api_key:
